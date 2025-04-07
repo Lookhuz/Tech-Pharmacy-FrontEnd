@@ -1,0 +1,192 @@
+{
+  "hello": "Hello",
+  "instructions": {
+    "logout": "Logout",
+    "ok": "Ok",
+    "close": "Close",
+    "login": "Log In",
+    "next": "Next",
+    "back": "Back",
+    "sign-in": "Sign In"
+  },
+  "extras": {
+    "at": "at",
+    "no": "No",
+    "yes": "Yes",
+    "footer": "© 2023-2024 Tech Pharmacy All rights reserved.",
+    "language": "Language"
+  },
+  "menus": {
+    "home": "Exposure",
+    "cashflow": "Cash Positioning",
+    "apiDoc": "API Documentation",
+    "apiTest": "API Test in-place",
+    "monitoring": "Monitoring (TBR)",
+    "ipAllowList": "IP Allowlist (TBR)",
+    "session": "Session (TBR)",
+    "notifications": "Notifications (TBR)"
+  },
+
+  "exposure": {
+    "button": "Save Changes",
+    "exposureUSD": {
+      "title": "Exposure USD",
+      "receivables": "USD Receivables",
+      "payments": "Payments USD",
+      "netFxExposure": "Net FX Exposure",
+      "totalReceivablesVolume": "Total Receivables Volume",
+      "downsideRisk": "Downside Risk",
+      "totalPaymentVolume": "Total Payment Volume",
+      "upsideRisk": "Upside Risk",
+      "totalFxExposure": "Total FX Exposure",
+      "VaR": "VaR (Total FX Exposure)"
+      },
+      "hedging": {
+        "title": "USD Hedging",
+        "maximumHedgeRatio": "Maximum Hedge Ratio (%)",
+        "term": {
+          "title": "Term",
+          "values": {
+            "value1": "Q1 / December", 
+            "value2": "Q2 / December", 
+            "value3": "Q1 / January", 
+            "value4": "Q2 / January", 
+            "value5": "Q1 / February", 
+            "value6": "Q2 / February"
+          }
+        },
+        "ndfSellVolume": "NDF Sell Volume",
+        "ndfBuyVolume": "NDF Buy Volume",
+        "netExposure": "Net Exposure (after derivatives)",
+        "totalDerivativesHedge": "Total Derivatives Hedge",
+        "totalForeignExchangeExposure": "Total Foreign Exchange Exposure (after derivatives)",
+        "VaR": "VaR (Total net exposure, after derivatives)"
+      }
+  },
+  "cashFlow": {
+    "inputPlaceHolder": "Click here to select a file",
+    "import": "IMPORT",
+    "export": "EXPORT",
+    "table": {
+      "deadline": "Deadline",
+      "moneyOut": "Payments",
+      "moneyIn": "Receivables"
+    }
+  },
+  "toolbar": {
+    "empresaTrading": "Joao Silva (demo) | EMPRESA TRADING LTDA",
+    "timeZone": "Time Zone: BRT",
+    "title": "Hedge",
+    "errorMessage": "Unable to log out. Try again later."
+  },
+  "home": {
+    "title": "Connectivity",
+    "liquidityAlerts": "Liquidity Providers Alerts",
+    "lastTwentyFourHours": "Last 24 hours",
+    "apiSummary": "Api Summary",
+    "requests": "Requests",
+    "copiedApikey": "Copied APIKEY",
+    "apikey": "APIKEY",
+    "confirmationMessage": "Are you sure you want to regenerate the APIKey?",
+    "tlsSummary": {
+      "title": "TLS Summary",
+      "certificates": {
+        "title": "Certificates",
+        "addCertificate": "Add Certificate",
+        "active": "Active",
+        "inactive": "Inactive (TBR)",
+        "status": "Status",
+        "cname": "CName",
+        "serialNumber": "Serial Number",
+        "lastConnection": "Last Connection",
+        "certificateCreation": "Certificate Creation",
+        "expiration": "Expiration",
+        "download": "Download"
+      }
+    },
+    "donut": {
+      "critical": "Critical",
+      "warning": "Warning",
+      "noAlerts": "No Alerts"
+    }
+  },
+  "requestHelp": {
+    "requestHelp": "Request Help",
+    "greeting": "Hi, how can we help you?",
+    "instruction": "Select how you would like to receive help from our Customer Representatives",
+    "sendEmail": {
+      "title": "Send Us An Email",
+      "btnText": "Send Email"
+    },
+    "helpTicket": {
+      "title": "Submit A Help Ticket",
+      "description": "We will respond as soon as possible",
+      "btnText": "Start Ticket (TBR)"
+    },
+    "liveChat": {
+      "title": "Live Chat",
+      "btnText": "Chat Now (TBR)"
+    }
+  },
+  "landing": {
+    "title": "Hedge",
+    "description": {
+      "descriptionOne": "Log in to access real-time actionable data, information and tools to improve the performance of your hedge strategies.",
+      "descriptionTwo": ""
+    },
+    "algoRfqConsole": {
+      "title": "Tech Pharmacy | Hedge",
+      "description": {
+      "descriptionOne": "Hedge is the Tech Pharmacy approach to help you navigate in the sea of information and data available for FX derivatives. Our tools will provide you the most accurate and real-time data on currencies, interest rates and macroeconomic indicators.",
+        "descriptionTwo": ""
+      }
+    },
+    "simplifyDevelopment": {
+      "title": "For Financial Professionals",
+      "description": {
+        "descriptionOne": "Designed to support decision-making processes by deliverying timely crucial data in near real-time, Hedge is especially valuable for corporate finance environments who need up-to-date market intelligence.",
+        "descriptionTwo": ""
+      }
+    },
+    "secureConnectivity": {
+      "title": "For Traders",
+      "description": {
+        "descriptionOne": "Whether managing risks on institutional trading desks or managing portfolios at asset management firms, Hedge equips you with the insights to stay ahead. With advanced analytics and real-time updates on FX markets derivatives, and economic trends, our platform empowers you to optimize trades, manage risks efficiently, and seize opportunities with precision.",
+        "descriptionTwo": ""
+      }
+    }
+  },
+  "login": {
+    "title": "Login",
+    "description": {
+      "descriptionOne": "This is a secure Tech Pharmacy authentication service ",
+      "descriptionTwo": "that allows you access to Tech Pharmacy services",
+      "descriptionThree": "from wherever you are."
+    },
+    "corporateEmail": "Coporate Email",
+    "password": "Password",
+    "authenticationFail": "User authentication failed: invalid credentials"
+  },
+  "register": {
+    "title": "Register",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "register": "Register",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Log In",
+    "authenticationFail": "User authentication failed: invalid credentials"
+  },
+  "notFound": {
+    "title": "404 Page not found",
+    "descriptionOne": "I'm afraid you've found a page that doesn't exist on Tech Pharmacy.",
+    "descriptionTwo": "That can happen when you follow a link to something that has since been deleted.",
+    "descriptionThree": "Or the link was incorrect to begin with.",
+    "apologies": "Sorry about that."
+  }
+}

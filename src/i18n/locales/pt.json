@@ -1,0 +1,192 @@
+{
+  "hello": "Olá",
+  "instructions": {
+    "logout": "Sair",
+    "ok": "Ok",
+    "close": "Fechar",
+    "login": "Entrar",
+    "next": "Próximo",
+    "back": "Voltar",
+    "sign-in": "Criar conta"
+  },
+  "extras": {
+    "at": "em",
+    "no": "Não",
+    "yes": "Sim",
+    "footer": "© 2023-2024 Tech Pharmacy Todos os direitos reservados.",
+    "language": "Idioma"
+  },
+  "menus": {
+    "home": "Exposure",
+    "cashflow": "Fluxo de Caixa",
+    "apiDoc": "Documentação da API",
+    "apiTest": "Teste da API no local",
+    "monitoring": "Monitoramento (TBR)",
+    "ipAllowList": "Lista de IPs permitidos (TBR)",
+    "session": "Sessão (TBR)",
+    "notifications": "Notificações (TBR)"
+  },
+  "exposure": {
+    "button": "Salvar Alterações",
+    "exposureUSD": {
+      "title": "Exposição USD",
+      "receivables": "Recebimentos USD",
+      "payments": "Pagamentos USD",
+      "netFxExposure": "Exposição Cambial Líquida",
+      "totalReceivablesVolume": "Volume Total Recebimentos",
+      "downsideRisk": "Risco de Baixa",
+      "totalPaymentVolume": "Volume Total Pagamentos",
+      "upsideRisk": "Risco de Alta",
+      "totalFxExposure": "Exposição Cambial Total",
+      "VaR": "VaR (Exposição Cambial Total)"
+      },
+    "hedging": {
+      "title": "Hedging USD",
+      "maximumHedgeRatio": "Fator de hedge máximo (%)",
+      "term": {
+        "title": "Prazo",
+        "values": {
+          "value1": "Q1 / Dezembro", 
+          "value2": "Q2 / Dezembro", 
+          "value3": "Q1 / Janeiro", 
+          "value4": "Q2 / Janeiro", 
+          "value5": "Q1 / Fevereiro", 
+          "value6": "Q2 / Fevereiro"
+        }
+      },
+      "ndfSellVolume": "Volume NDF Venda",
+      "ndfBuyVolume": "Volume NDF Compra",
+      "netExposure": "Exposição líquida (após derivativos)",
+      "totalDerivativesHedge": "Total Hedge em derivativos",
+      "totalForeignExchangeExposure": "Total Exposição Cambial (após derivativos)",
+      "VaR": "VaR (Total exposição líquida, após derivativos)"
+    }
+  },
+  "cashFlow": {
+    "inputPlaceHolder": "Clique aqui para selecionar um arquivo",
+    "import": "IMPORTAR",
+    "export": "EXPORTAR",
+    "table": {
+      "deadline": "Prazo",
+      "moneyOut": "Pagamentos",
+      "moneyIn": "Recebimentos"
+    }
+  }
+  ,
+  "toolbar": {
+    "empresaTrading": "João Silva (demo) | EMPRESA TRADING LTDA",
+    "timeZone": "Fuso Horário: BRT",
+    "title": "Hedge",
+    "errorMessage": "Não foi possível sair. Tente novamente mais tarde."
+  },
+  "home": {
+    "title": "Conectividade",
+    "liquidityAlerts": "Alertas de Provedores de Liquidez",
+    "lastTwentyFourHours": "Últimas 24 horas",
+    "apiSummary": "Resumo da API",
+    "requests": "Solicitações",
+    "copiedApikey": "APIKEY copiada",
+    "apikey": "APIKEY",
+    "confirmationMessage": "Tem certeza de que deseja regenerar a APIKey?",
+    "tlsSummary": {
+      "title": "Resumo TLS",
+      "certificates": {
+        "title": "Certificados",
+        "addCertificate": "Adicionar Certificado",
+        "active": "Ativo",
+        "inactive": "Inativo (TBR)",
+        "status": "Status",
+        "cname": "CName",
+        "serialNumber": "Número de Série",
+        "lastConnection": "Última Conexão",
+        "certificateCreation": "Criação do Certificado",
+        "expiration": "Expiração",
+        "download": "Baixar"
+      }
+    },
+    "donut": {
+      "critical": "Crítico",
+      "warning": "Aviso",
+      "noAlerts": "Sem Alertas"
+    }
+  },
+  "requestHelp": {
+    "requestHelp": "Solicitar Ajuda",
+    "greeting": "Olá, como podemos ajudar você?",
+    "instruction": "Selecione como gostaria de receber ajuda de nossos Representantes de Atendimento ao Cliente",
+    "sendEmail": {
+      "title": "Envie-nos um E-mail",
+      "btnText": "Enviar e-mail"
+    },
+    "helpTicket": {
+      "title": "Enviar um ticket de suporte",
+      "description": "Responderemos o mais breve possível",
+      "btnText": "Iniciar ticket (TBR)"
+    },
+    "liveChat": {
+      "title": "Chat ao vivo",
+      "btnText": "Iniciar chat (TBR)"
+    }
+  },
+  "landing": {
+    "title": "Hedge",
+    "description": {
+      "descriptionOne": "Faça login para acessar dados acionáveis em tempo real, informações e ferramentas para melhorar o desempenho das suas estratégias de hedge.",
+      "descriptionTwo": ""
+    },
+    "algoRfqConsole": {
+      "title": "Tech Pharmacy | Hedge",
+      "description": {
+        "descriptionOne": "Hedge é a abordagem Tech Pharmacy para ajudá-lo a navegar no mar de informações e dados disponíveis para derivativos de FX. Nossas ferramentas fornecerão os dados mais precisos e em tempo real sobre moedas, taxas de juros e indicadores macroeconômicos.",
+        "descriptionTwo": ""
+      }
+    },
+    "simplifyDevelopment": {
+      "title": "Para profissionais financeiros",
+      "description": {
+        "descriptionOne": "Projetado para apoiar processos de tomada de decisão fornecendo dados cruciais em tempo quase real, o Hedge é especialmente valioso para ambientes de finanças corporativas que necessitam de inteligência de mercado atualizada.",
+        "descriptionTwo": ""
+      }
+    },
+    "secureConnectivity": {
+      "title": "Para traders",
+      "description": {
+        "descriptionOne": "Seja gerenciando riscos em mesas de trading institucionais ou administrando portfólios em empresas de gestão de ativos, o Hedge equipa você com os insights para se manter à frente. Com analytics avançados e atualizações em tempo real sobre mercados de derivativos de FX e tendências econômicas, nossa plataforma permite que você otimize trades, gerencie riscos com eficiência e aproveite oportunidades com precisão.",
+        "descriptionTwo": ""
+      }
+    }
+  },
+  "login": {
+    "title": "Login",
+    "description": {
+      "descriptionOne": "Este é um serviço de autenticação seguro da Tech Pharmacy",
+      "descriptionTwo": "que permite acesso aos serviços Tech Pharmacy",
+      "descriptionThree": "de onde você estiver."
+    },
+    "corporateEmail": "E-mail corporativo",
+    "password": "Senha",
+    "authenticationFail": "Falha na autenticação do usuário: credenciais inválidas"
+  },
+  "register": {
+    "title": "Registrar-se",
+    "fullName": "Nome Completo",
+    "fullNamePlaceholder": "Digite seu nome completo",
+    "email": "Email",
+    "emailPlaceholder": "Digite seu email",
+    "password": "Senha",
+    "passwordPlaceholder": "Digite sua senha",
+    "confirmPassword": "Confirmar Senha",
+    "confirmPasswordPlaceholder": "Confirme sua senha",
+    "register": "Cadastrar",
+    "alreadyHaveAccount": "Já tem uma conta?",
+    "login": "Login",
+    "authenticationFail": "Falha no cadastro do usuário: credenciais inválidas"
+  },
+  "notFound": {
+    "title": "404 Página não encontrada",
+    "descriptionOne": "Receio que você encontrou uma página que não existe na Tech Pharmacy.",
+    "descriptionTwo": "Isso pode acontecer quando você segue um link para algo que foi excluído.",
+    "descriptionThree": "Ou o link estava incorreto desde o início.",
+    "apologies": "Desculpe por isso."
+  }
+}
