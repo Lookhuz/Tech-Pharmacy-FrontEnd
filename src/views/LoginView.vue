@@ -322,30 +322,59 @@ export default {
     },
     loginUser () {
       this.$refs.form.validate()
-      if (this.formValid) {
-        this.loadingLogin = true
+      if (!this.formValid) return;
 
-        const payload = {
-          email: this.username.trim(),
-          password: this.password.trim(),
-        }
+      const email = this.username.trim()
+      const password = this.password.trim()
+      const maxAttempts = 5
 
-        this.login(payload)
-          .then((response) => {
-            const data = response.data
-            this.saveSessionLocalStorage(data)
-            this.authenticated = true
-            this.userId = data.user_id
-            this.$router.push("/console/home")
-          })
-          .catch(() => {
-            this.loginError = true
-            this.errorMessage = "User authentication failed: invalid credentials"
-          })
-          .finally(() => {
-            this.loadingLogin = false
-          })
+      const attemptsData = JSON.parse(localStorage.getItem("loginAttempts")) || {}
+
+      // Checa se email está bloqueado
+      if (attemptsData[email]?.blocked) {
+        this.loginError = true
+        this.errorMessage = "Este e-mail foi temporariamente bloqueado após 5 tentativas de login falhadas."
+        return
       }
+
+      this.loadingLogin = true
+
+      const payload = {
+        email,
+        password
+      }
+
+      this.login(payload)
+        .then((response) => {
+          delete attemptsData[email]
+          localStorage.setItem("loginAttempts", JSON.stringify(attemptsData))
+
+          const data = response.data
+          this.saveSessionLocalStorage(data)
+          this.authenticated = true
+          this.userId = data.user_id
+          this.$router.push("/console/home")
+        })
+        .catch(() => {
+          if (!attemptsData[email]) {
+            attemptsData[email] = { count: 1 }
+          } else {
+            attemptsData[email].count += 1
+          }
+
+          if (attemptsData[email].count >= maxAttempts) {
+            attemptsData[email].blocked = true
+            this.errorMessage = "Muitas tentativas falhas. Este e-mail foi bloqueado temporariamente."
+          } else {
+            this.errorMessage = `Credenciais inválidas. Tentativas restantes: ${maxAttempts - attemptsData[email].count}`
+          }
+
+          localStorage.setItem("loginAttempts", JSON.stringify(attemptsData))
+          this.loginError = true
+        })
+        .finally(() => {
+          this.loadingLogin = false
+        })
     }
   },
   computed: {
