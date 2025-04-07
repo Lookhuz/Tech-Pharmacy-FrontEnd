@@ -1,4 +1,4 @@
-# uiHedge
+# Tech Pharmacy
 
 - A template to help you start and manage the Tech Pharmacy project.
 
