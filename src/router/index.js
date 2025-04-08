@@ -8,6 +8,10 @@ const auth = Number(process.env.VUE_APP_AUTH)
 
 const routes = [
   {
+    path: "/",
+    redirect: "/login"
+  },
+  {
     path: "/login",
     name: "login",
     // component: () => import("./../views/LoginView.vue"),
