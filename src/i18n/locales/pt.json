@@ -129,31 +129,36 @@
     }
   },
   "landing": {
-    "title": "Hedge",
+    "title": "Organize sua rotina de remédios",
     "description": {
-      "descriptionOne": "Faça login para acessar dados acionáveis em tempo real, informações e ferramentas para melhorar o desempenho das suas estratégias de hedge.",
-      "descriptionTwo": ""
+      "descriptionOne": "Cadastre seus medicamentos e defina os horários de cada dose.",
+      "descriptionTwo": "Receba alertas automáticos e acompanhe o andamento do tratamento.",
+      "descriptionThree": "Visualize quanto falta para a próxima dose e quanto já foi concluído.",
+      "descriptionFour": "Tudo em um só lugar, simples e fácil de usar."
     },
-    "algoRfqConsole": {
-      "title": "Tech Pharmacy | Hedge",
-      "description": {
-        "descriptionOne": "Hedge é a abordagem Tech Pharmacy para ajudá-lo a navegar no mar de informações e dados disponíveis para derivativos de FX. Nossas ferramentas fornecerão os dados mais precisos e em tempo real sobre moedas, taxas de juros e indicadores macroeconômicos.",
-        "descriptionTwo": ""
-      }
+    "gridPro": {
+      "title": "Registro personalizado de tratamentos",
+      "descriptionOne": "Escolha o remédio que está utilizando e defina o intervalo entre as doses e a duração do tratamento.",
+      "descriptionTwo": "Com poucos cliques, você cria um cronograma personalizado para cada medicamento.",
+      "descriptionThree": "Ideal para pacientes em tratamentos contínuos ou temporários.",
+      "descriptionFour": "Organização simples, visual intuitivo."
     },
-    "simplifyDevelopment": {
-      "title": "Para profissionais financeiros",
-      "description": {
-        "descriptionOne": "Projetado para apoiar processos de tomada de decisão fornecendo dados cruciais em tempo quase real, o Hedge é especialmente valioso para ambientes de finanças corporativas que necessitam de inteligência de mercado atualizada.",
-        "descriptionTwo": ""
-      }
+    "fxMarket": {
+      "title": "Acompanhamento em tempo real",
+      "descriptionOne": "Depois de cadastrar seus medicamentos, acompanhe o tempo restante para a próxima dose.",
+      "descriptionTwo": "Visualize quantos % do tratamento já foi concluído.",
+      "descriptionThree": "Receba lembretes visuais e otimize sua adesão ao tratamento.",
+      "descriptionFour": "Mais autonomia para você ou para quem cuida de você.",
+      "descriptionFive": "Ideal também para cuidadores e profissionais da saúde."
     },
-    "secureConnectivity": {
-      "title": "Para traders",
-      "description": {
-        "descriptionOne": "Seja gerenciando riscos em mesas de trading institucionais ou administrando portfólios em empresas de gestão de ativos, o Hedge equipa você com os insights para se manter à frente. Com analytics avançados e atualizações em tempo real sobre mercados de derivativos de FX e tendências econômicas, nossa plataforma permite que você otimize trades, gerencie riscos com eficiência e aproveite oportunidades com precisão.",
-        "descriptionTwo": ""
-      }
+    "algorithmic": {
+      "title": "Solução moderna e segura",
+      "descriptionOne": "Nada de anotações soltas ou alarmes confusos:",
+      "descriptionTwo": " nossa plataforma reúne todos os dados do tratamento em um só lugar.",
+      "descriptionThree": "Com design intuitivo e responsivo, ela se adapta ao seu dia a dia.",
+      "descriptionFour": "Leve, rápida, confiável:",
+      "descriptionFive": " sua saúde merece o melhor da tecnologia.",
+      "descriptionSix": "Experimente agora."
     }
   },
   "login": {

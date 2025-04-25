@@ -2,14 +2,20 @@ import VueRouter from "vue-router";
 import LoginView from "./../views/LoginView.vue";
 import RegisterView from "./../views/RegisterView.vue";
 import NotFoundView from './../views/NotFoundView.vue';
+import LandingView from './../views/LandingView.vue';
 import { useAuthStore } from "./../store/index"
 
 const auth = Number(process.env.VUE_APP_AUTH)
 
 const routes = [
-  {
-    path: "/",
-    redirect: "/login"
+  { 
+    path: "/", 
+    name: "landing",
+    // component: () => import("./../views/LandingView.vue"),
+    component: LandingView,
+    meta: {
+      public: true
+    },
   },
   {
     path: "/login",
