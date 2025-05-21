@@ -418,7 +418,7 @@ export default {
           })
           .catch(() => {
             this.loginError = true
-            this.errorMessage = "User authentication failed: invalid credentials"
+            this.errorMessage = "Email já existente, tente outro!"
           })
           .finally(() => {
             this.disabledRegisterButton = false
