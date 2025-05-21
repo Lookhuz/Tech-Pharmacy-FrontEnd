@@ -1,17 +1,22 @@
+// router.js
 import VueRouter from "vue-router";
+import AuthenticatedLayout from "./../layouts/AuthenticatedLayout.vue";
+import LandingView from './../views/LandingView.vue';
 import LoginView from "./../views/LoginView.vue";
+import HomeView from "./../views/HomeView.vue";
+import MedicationDetailView from "./../views/MedicationDetailView.vue";
+import DosageConfigurationView from "./../views/DosageConfigurationView.vue";
+import ActiveMedicationsView from "./../views/ActiveMedicationsView.vue";
 import RegisterView from "./../views/RegisterView.vue";
 import NotFoundView from './../views/NotFoundView.vue';
-import LandingView from './../views/LandingView.vue';
-import { useAuthStore } from "./../store/index"
+import { useAuthStore } from "./../store/index";
 
-const auth = Number(process.env.VUE_APP_AUTH)
+const auth = Number(process.env.VUE_APP_AUTH);
 
 const routes = [
-  { 
-    path: "/", 
+  {
+    path: "/",
     name: "landing",
-    // component: () => import("./../views/LandingView.vue"),
     component: LandingView,
     meta: {
       public: true
@@ -20,7 +25,6 @@ const routes = [
   {
     path: "/login",
     name: "login",
-    // component: () => import("./../views/LoginView.vue"),
     component: LoginView,
     meta: {
       public: true
@@ -29,11 +33,42 @@ const routes = [
   {
     path: "/register",
     name: "register",
-    // component: () => import("./../views/RegisterView.vue"),
     component: RegisterView,
     meta: {
       public: true
     },
+  },
+  {
+    path: "/tech-pharmacy",
+    component: AuthenticatedLayout,
+    meta: {
+      public: false
+    },
+    redirect: "/tech-pharmacy/home",
+    children: [
+      {
+        path: "home",
+        name: "home",
+        component: HomeView,
+      },
+      {
+        path: "medication/:id",
+        name: "medication-detail",
+        component: MedicationDetailView,
+        props: true
+      },
+      {
+        path: "medication/:id/dosage",
+        name: "dosage-configuration",
+        component: DosageConfigurationView,
+        props: true
+      },
+      {
+        path: "active-medications",
+        name: "active-medications",
+        component: ActiveMedicationsView,
+      },
+    ]
   },
   {
     path: '*',
@@ -56,7 +91,7 @@ function handleRedirect (to, next, isPublicRoute, authenticated) {
   }
   // logged try to access public route
   if (authenticated && onlyLoggedOutRoute) {
-    return next("/console/home")
+    return next("/tech-pharmacy/home")
   }
   return next()
 }
@@ -68,27 +103,13 @@ router.beforeEach((to, from, next) => {
   const authStore = useAuthStore()
   let authenticated = authStore.isAuthenticated
   const isPublicRoute = to.matched.some(record => record.meta.public)
-  // validation for user refresh page (F5) cenario
+
   if (authenticated === undefined) {
     authStore.loadAuthenticatedAndUserIdStateFromLocalStorage()
     authenticated = authStore.isAuthenticated
-    if (!isPublicRoute) {
-      if (authenticated) {
-        return handleRedirect(to, next, isPublicRoute, authenticated)
-      }
-      return next("/login")
-    }
   }
   return handleRedirect(to, next, isPublicRoute, authenticated)
 })
 
-// router.afterEach((to, from) => {
-  // store.commit("setCurrentRouteName", to.name)
-  // store.commit("setToolbarTitle", to.meta.pageTitle)
-  // store.commit("setPreviousPage", from.path)
-  // store.commit("setMaxHeightCurrentRoute", to.meta.maxHeight)
-  // store.commit("setBackgroundColor", to.meta.backgroundColor)
-  // resize.onResize()
-// })
 
-export default router
+export default router;
