@@ -4,10 +4,10 @@
     "logout": "Logout",
     "ok": "Ok",
     "close": "Close",
-    "login": "Log In",
+    "login": "Login",
     "next": "Next",
     "back": "Back",
-    "sign-in": "Sign In"
+    "sign-in": "Sign Up"
   },
   "extras": {
     "at": "at",
@@ -17,158 +17,77 @@
     "language": "Language"
   },
   "menus": {
-    "home": "Exposure",
-    "cashflow": "Cash Positioning",
-    "apiDoc": "API Documentation",
-    "apiTest": "API Test in-place",
-    "monitoring": "Monitoring (TBR)",
-    "ipAllowList": "IP Allowlist (TBR)",
-    "session": "Session (TBR)",
-    "notifications": "Notifications (TBR)"
+    "home": "Medications",
+    "activeMedications": "Active Medications"
   },
-
-  "exposure": {
-    "button": "Save Changes",
-    "exposureUSD": {
-      "title": "Exposure USD",
-      "receivables": "USD Receivables",
-      "payments": "Payments USD",
-      "netFxExposure": "Net FX Exposure",
-      "totalReceivablesVolume": "Total Receivables Volume",
-      "downsideRisk": "Downside Risk",
-      "totalPaymentVolume": "Total Payment Volume",
-      "upsideRisk": "Upside Risk",
-      "totalFxExposure": "Total FX Exposure",
-      "VaR": "VaR (Total FX Exposure)"
-      },
-      "hedging": {
-        "title": "USD Hedging",
-        "maximumHedgeRatio": "Maximum Hedge Ratio (%)",
-        "term": {
-          "title": "Term",
-          "values": {
-            "value1": "Q1 / December", 
-            "value2": "Q2 / December", 
-            "value3": "Q1 / January", 
-            "value4": "Q2 / January", 
-            "value5": "Q1 / February", 
-            "value6": "Q2 / February"
-          }
-        },
-        "ndfSellVolume": "NDF Sell Volume",
-        "ndfBuyVolume": "NDF Buy Volume",
-        "netExposure": "Net Exposure (after derivatives)",
-        "totalDerivativesHedge": "Total Derivatives Hedge",
-        "totalForeignExchangeExposure": "Total Foreign Exchange Exposure (after derivatives)",
-        "VaR": "VaR (Total net exposure, after derivatives)"
-      }
-  },
-  "cashFlow": {
-    "inputPlaceHolder": "Click here to select a file",
-    "import": "IMPORT",
-    "export": "EXPORT",
-    "table": {
-      "deadline": "Deadline",
-      "moneyOut": "Payments",
-      "moneyIn": "Receivables"
-    }
+  "medication": {
+    "title": "Medication Catalog"
   },
   "toolbar": {
-    "empresaTrading": "Joao Silva (demo) | EMPRESA TRADING LTDA",
+    "empresaTrading": "João Silva (demo) | EMPRESA TRADING LTDA",
     "timeZone": "Time Zone: BRT",
     "title": "Hedge",
-    "errorMessage": "Unable to log out. Try again later."
-  },
-  "home": {
-    "title": "Connectivity",
-    "liquidityAlerts": "Liquidity Providers Alerts",
-    "lastTwentyFourHours": "Last 24 hours",
-    "apiSummary": "Api Summary",
-    "requests": "Requests",
-    "copiedApikey": "Copied APIKEY",
-    "apikey": "APIKEY",
-    "confirmationMessage": "Are you sure you want to regenerate the APIKey?",
-    "tlsSummary": {
-      "title": "TLS Summary",
-      "certificates": {
-        "title": "Certificates",
-        "addCertificate": "Add Certificate",
-        "active": "Active",
-        "inactive": "Inactive (TBR)",
-        "status": "Status",
-        "cname": "CName",
-        "serialNumber": "Serial Number",
-        "lastConnection": "Last Connection",
-        "certificateCreation": "Certificate Creation",
-        "expiration": "Expiration",
-        "download": "Download"
-      }
-    },
-    "donut": {
-      "critical": "Critical",
-      "warning": "Warning",
-      "noAlerts": "No Alerts"
-    }
+    "errorMessage": "Unable to log out. Please try again later."
   },
   "requestHelp": {
     "requestHelp": "Request Help",
-    "greeting": "Hi, how can we help you?",
-    "instruction": "Select how you would like to receive help from our Customer Representatives",
+    "greeting": "Hello, how can we assist you?",
+    "instruction": "Select how you would like to receive help from our Customer Service Representatives",
     "sendEmail": {
-      "title": "Send Us An Email",
+      "title": "Send us an Email",
       "btnText": "Send Email"
     },
     "helpTicket": {
-      "title": "Submit A Help Ticket",
+      "title": "Submit a Support Ticket",
       "description": "We will respond as soon as possible",
       "btnText": "Start Ticket (TBR)"
     },
     "liveChat": {
       "title": "Live Chat",
-      "btnText": "Chat Now (TBR)"
+      "btnText": "Start Chat (TBR)"
     }
   },
   "landing": {
-    "title": "Manage your medication routine",
+    "title": "Organize your medication routine",
     "description": {
-      "descriptionOne": "Add your medications and set your dose schedule.",
-      "descriptionTwo": "Get automatic reminders and track your treatment progress.",
-      "descriptionThree": "See how long until the next dose and what’s already completed.",
+      "descriptionOne": "Register your medications and set the schedule for each dose.",
+      "descriptionTwo": "Receive automatic alerts and track treatment progress.",
+      "descriptionThree": "See how much time is left for the next dose and how much has been completed.",
       "descriptionFour": "All in one place, simple and easy to use."
     },
     "gridPro": {
-      "title": "Personalized treatment tracking",
-      "descriptionOne": "Choose the medicine you're taking and define how often and how long you want to take it.",
-      "descriptionTwo": "In just a few clicks, create a personalized schedule for each medication.",
-      "descriptionThree": "Ideal for both long-term and short-term treatments.",
-      "descriptionFour": "Simple organization, intuitive interface."
+      "title": "Custom treatment records",
+      "descriptionOne": "Choose the medication you are using and set the interval between doses and the treatment duration.",
+      "descriptionTwo": "With just a few clicks, you create a personalized schedule for each medication.",
+      "descriptionThree": "Ideal for patients in continuous or temporary treatments.",
+      "descriptionFour": "Simple organization, intuitive visuals."
     },
     "fxMarket": {
-      "title": "Real-time treatment insights",
-      "descriptionOne": "After adding your medications, monitor how long until your next dose.",
-      "descriptionTwo": "See what percentage of your treatment has already been completed.",
-      "descriptionThree": "Get visual reminders and stay committed to your health routine.",
-      "descriptionFour": "More autonomy for you or your caregiver.",
-      "descriptionFive": "Also great for family caregivers and healthcare professionals."
+      "title": "Real-time tracking",
+      "descriptionOne": "After registering your medications, track the remaining time for the next dose.",
+      "descriptionTwo": "See how many % of the treatment has been completed.",
+      "descriptionThree": "Receive visual reminders and optimize your treatment adherence.",
+      "descriptionFour": "More autonomy for you or for those you care for.",
+      "descriptionFive": "Also ideal for caregivers and healthcare professionals."
     },
     "algorithmic": {
-      "title": "Modern, safe and reliable",
-      "descriptionOne": "Forget sticky notes or confusing alarms:",
-      "descriptionTwo": " our platform keeps everything organized in one place.",
-      "descriptionThree": "Designed with an intuitive, responsive layout that adapts to your day-to-day.",
-      "descriptionFour": "Lightweight, fast, secure:",
-      "descriptionFive": " your health deserves the best of technology.",
+      "title": "Modern and secure solution",
+      "descriptionOne": "No more loose notes or confusing alarms:",
+      "descriptionTwo": " our platform gathers all treatment data in one place.",
+      "descriptionThree": "With an intuitive and responsive design, it adapts to your daily life.",
+      "descriptionFour": "Lightweight, fast, reliable:",
+      "descriptionFive": " your health deserves the best technology.",
       "descriptionSix": "Try it now."
     }
   },
   "login": {
     "title": "Login",
     "description": {
-      "descriptionOne": "This is a secure Tech Pharmacy authentication service ",
-      "descriptionTwo": "that allows you access to Tech Pharmacy services",
+      "descriptionOne": "This is a secure authentication service from Tech Pharmacy",
+      "descriptionTwo": "that allows access to Tech Pharmacy services",
       "descriptionThree": "from wherever you are."
     },
-    "corporateEmail": "Coporate Email",
+    "corporateEmail": "Corporate Email",
     "password": "Password",
     "authenticationFail": "User authentication failed: invalid credentials"
   },
@@ -184,14 +103,14 @@
     "confirmPasswordPlaceholder": "Confirm your password",
     "register": "Register",
     "alreadyHaveAccount": "Already have an account?",
-    "login": "Log In",
-    "authenticationFail": "User authentication failed: invalid credentials"
+    "login": "Login",
+    "authenticationFail": "User registration failed: invalid credentials"
   },
   "notFound": {
-    "title": "404 Page not found",
-    "descriptionOne": "I'm afraid you've found a page that doesn't exist on Tech Pharmacy.",
-    "descriptionTwo": "That can happen when you follow a link to something that has since been deleted.",
-    "descriptionThree": "Or the link was incorrect to begin with.",
+    "title": "404 Page Not Found",
+    "descriptionOne": "It seems you found a page that doesn't exist on Tech Pharmacy.",
+    "descriptionTwo": "This can happen when you follow a link to something that has been deleted.",
+    "descriptionThree": "Or the link was incorrect from the start.",
     "apologies": "Sorry about that."
   }
 }

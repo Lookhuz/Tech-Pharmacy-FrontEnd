@@ -17,98 +17,17 @@
     "language": "Idioma"
   },
   "menus": {
-    "home": "Exposure",
-    "cashflow": "Fluxo de Caixa",
-    "apiDoc": "Documentação da API",
-    "apiTest": "Teste da API no local",
-    "monitoring": "Monitoramento (TBR)",
-    "ipAllowList": "Lista de IPs permitidos (TBR)",
-    "session": "Sessão (TBR)",
-    "notifications": "Notificações (TBR)"
+    "home": "Medicações",
+    "activeMedications": "Medicamentos Ativos"
   },
-  "exposure": {
-    "button": "Salvar Alterações",
-    "exposureUSD": {
-      "title": "Exposição USD",
-      "receivables": "Recebimentos USD",
-      "payments": "Pagamentos USD",
-      "netFxExposure": "Exposição Cambial Líquida",
-      "totalReceivablesVolume": "Volume Total Recebimentos",
-      "downsideRisk": "Risco de Baixa",
-      "totalPaymentVolume": "Volume Total Pagamentos",
-      "upsideRisk": "Risco de Alta",
-      "totalFxExposure": "Exposição Cambial Total",
-      "VaR": "VaR (Exposição Cambial Total)"
-      },
-    "hedging": {
-      "title": "Hedging USD",
-      "maximumHedgeRatio": "Fator de hedge máximo (%)",
-      "term": {
-        "title": "Prazo",
-        "values": {
-          "value1": "Q1 / Dezembro", 
-          "value2": "Q2 / Dezembro", 
-          "value3": "Q1 / Janeiro", 
-          "value4": "Q2 / Janeiro", 
-          "value5": "Q1 / Fevereiro", 
-          "value6": "Q2 / Fevereiro"
-        }
-      },
-      "ndfSellVolume": "Volume NDF Venda",
-      "ndfBuyVolume": "Volume NDF Compra",
-      "netExposure": "Exposição líquida (após derivativos)",
-      "totalDerivativesHedge": "Total Hedge em derivativos",
-      "totalForeignExchangeExposure": "Total Exposição Cambial (após derivativos)",
-      "VaR": "VaR (Total exposição líquida, após derivativos)"
-    }
+  "medication": {
+    "title": "Catálogo de Medicamentos"
   },
-  "cashFlow": {
-    "inputPlaceHolder": "Clique aqui para selecionar um arquivo",
-    "import": "IMPORTAR",
-    "export": "EXPORTAR",
-    "table": {
-      "deadline": "Prazo",
-      "moneyOut": "Pagamentos",
-      "moneyIn": "Recebimentos"
-    }
-  }
-  ,
   "toolbar": {
     "empresaTrading": "João Silva (demo) | EMPRESA TRADING LTDA",
     "timeZone": "Fuso Horário: BRT",
     "title": "Hedge",
     "errorMessage": "Não foi possível sair. Tente novamente mais tarde."
-  },
-  "home": {
-    "title": "Conectividade",
-    "liquidityAlerts": "Alertas de Provedores de Liquidez",
-    "lastTwentyFourHours": "Últimas 24 horas",
-    "apiSummary": "Resumo da API",
-    "requests": "Solicitações",
-    "copiedApikey": "APIKEY copiada",
-    "apikey": "APIKEY",
-    "confirmationMessage": "Tem certeza de que deseja regenerar a APIKey?",
-    "tlsSummary": {
-      "title": "Resumo TLS",
-      "certificates": {
-        "title": "Certificados",
-        "addCertificate": "Adicionar Certificado",
-        "active": "Ativo",
-        "inactive": "Inativo (TBR)",
-        "status": "Status",
-        "cname": "CName",
-        "serialNumber": "Número de Série",
-        "lastConnection": "Última Conexão",
-        "certificateCreation": "Criação do Certificado",
-        "expiration": "Expiração",
-        "download": "Baixar"
-      }
-    },
-    "donut": {
-      "critical": "Crítico",
-      "warning": "Aviso",
-      "noAlerts": "Sem Alertas"
-    }
   },
   "requestHelp": {
     "requestHelp": "Solicitar Ajuda",
