@@ -2,17 +2,6 @@
 
 Tech Pharmacy is a comprehensive, modern, and secure web application template designed to streamline the development and management of pharmacy-related projects. Built with Vue.js, Vuetify, and Pinia, this project provides a robust foundation for developing scalable and maintainable applications.
 
-+-------------------+       +-------------------+       +---------------------+
-|      RX           |       |   ()()()        |       |        | |          |
-|   #####           |       |  ()()()         |       |      --(+)--        |
-|  #     #          |       |   ()__()()        |       |        | |          |
-|  #     # #####    |       |                   |       |  Disp.: 1 comp.     |
-|  #     # #   #    |       |   Tech Pharmacy   |       |  Intervalo: 8/8 hrs |
-|   #####  #####    |       |                   |       |  Duração: 7 dias    |
-+-------------------+       +-------------------+       +---------------------+
-Prescrição Médica             Comprimidos                 Instruções
-
-
 ## Table of Contents
 
 - [Tech Pharmacy](#tech-pharmacy)
