@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import RequestHelpDialog from "./../components/common/RequestHelpDialog.vue"
+import RequestHelpDialog from "./../components/RequestHelpDialog.vue"
 import { useDisplayStore, useAuthStore } from "./../store/index"
 import { mapState, mapWritableState, mapActions } from "pinia"
 import ToolBar from "./../components/ToolBar.vue"
