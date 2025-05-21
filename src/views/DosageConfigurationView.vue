@@ -77,7 +77,7 @@
 </template>
 
 <script>
-import { useMedicationStore } from "@/store/index.js"; // Ou o caminho direto para medicationStore.js
+import { useMedicationStore, useActiveMedicationsStore } from "@/store/index.js";
 
 export default {
   name: 'DosageConfigurationView',
@@ -138,12 +138,24 @@ export default {
   methods: {
     configureReminders() {
       if (this.$refs.dosageForm.validate()) {
-        console.log('Configuração de Dosagem:', this.dosageInfo);
-        console.log('Medicamento:', this.medicationDetails);
-        console.log('Informações do Usuário:', this.passedUserInfo);
-        alert('Lembretes configurados! (Verifique o console para detalhes)');
+        const activeMedications = useActiveMedicationsStore();
+
+        const activeMedicationData = {
+          medicationId: this.id,
+          userInfo: this.passedUserInfo, // As informações que já tínhamos
+          dosageInfo: { ...this.dosageInfo } // A dosagem configurada
+        };
+
+        activeMedications.addActiveMedication(activeMedicationData);
+
+        // console.log('Configuração de Dosagem Salva:', activeMedicationData);
+        // console.log('Medicamento:', this.medicationDetails);
+
+        // Redirecionar para a tela de medicamentos ativos
+        this.$router.push({ name: 'active-medications' });
       } else {
-        alert('Por favor, preencha todos os campos corretamente.');
+        // alert('Por favor, preencha todos os campos corretamente.');
+        this.$vuetify.goTo(0);
       }
     }
   }
